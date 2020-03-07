@@ -15,7 +15,7 @@ else
         % multiSet(i:size(G,1), i:size(G,2)) = multi;
     end
     for i=1:size(G,1)
-        G(i,:) = G(i,:)/G(i,i);
+        G(i,:) = G(i,:)/G(i,sum(G(i,:)==0)+1);
     end
     Latexex = arrow(Latexex, 'clean\ up', '');
     Latexex = [Latexex Mat2LaTex(G)];
