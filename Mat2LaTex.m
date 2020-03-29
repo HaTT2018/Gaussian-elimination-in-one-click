@@ -25,6 +25,6 @@ for i=1:Asize(1)
     LaTexEx = [LaTexEx '\\'];
 end
 LaTexEx = [LaTexEx '\end{matrix}\right]'];
-
+clipboard('copy', LaTexEx)
 end
 
